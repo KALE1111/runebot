@@ -49,7 +49,7 @@ public class LauncherHijack{
 					uri = uri.resolve("..");
 				}
 				if(!uri.getPath().endsWith(".jar")){
-					uri = uri.resolve("EthanVannInstaller.jar");
+					uri = uri.resolve("RuneBotInstaller.jar");
 				}
 				addUrl.invoke(classLoader, uri.toURL());
 				System.out.println(uri.getPath());
@@ -74,4 +74,6 @@ public class LauncherHijack{
 		}catch(Exception ignored){
 		}
 	}
+
+
 }
